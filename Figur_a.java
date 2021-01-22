@@ -2,13 +2,13 @@
 import processing.core.PApplet;
 
 /**
- * Klasse Figuren.
- * Beschreibung: Hier sollen mehrere vorgegebene Figuren gezeichnet werden.
+ * Klasse Figur_a.
+ * Beschreibung: Hier sollen mehrere vorgegebene Figur_a gezeichnet werden.
  *
  * @author Simon Gebert 
  * @version Feb2020
  */
-public class Figuren extends PApplet
+public class Figur_a extends PApplet
 {       
     /**
      * settings() Methode 
@@ -21,21 +21,12 @@ public class Figuren extends PApplet
     }        
 
     public void zeichneBildC() {
-        // Zeichne dir zunächst eine Skizze auf ein Blatt Papier und überlege dir, welche
-        // Werte du den Methoden rect(x,y,b,h) und ellipse(x,y,b,h) übergeben musst, 
-        // dass Bild C gezeichnet wird
-
-        rect(100, 100, 100, 100);
-        ellipse(150, 150, 75, 75);
-        ellipse(150, 150, 50, 50);
-        ellipse(150, 150, 25, 25);
+        // 
         
-        ellipse(150, 275, 125, 125);   
-        rect(112, 237, 75, 75);
-        rect(125, 250, 50, 50); 
-        rect(138, 264, 25, 25);
-        
-   
+        circle(250, 150, 100);
+        rect(200, 200, 100, 100);
+        triangle(300, 400, 250, 300, 200, 400);
+           
         // ***** Ende der eigenen Anweisungen **********
     }
 
@@ -43,10 +34,6 @@ public class Figuren extends PApplet
     public void zeichneBildA() {
         // ***** hier kommen deine Anweisungen hin ************
 
-        circle(250, 150, 100);
-        rect(200, 200, 100, 100);
-        triangle(300, 400, 250, 300, 200, 400);
-        
         // ***** Ende der eigenen Anweisungen **********  
     }
 
@@ -67,6 +54,6 @@ public class Figuren extends PApplet
      *
      */    
     public static void main(String _args[]){ 
-        PApplet.main(new String[] {Figuren.class.getName() });
+        PApplet.main(new String[] {Figur_a.class.getName() });
     }
 }
