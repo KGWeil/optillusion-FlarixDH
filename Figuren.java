@@ -17,7 +17,7 @@ public class Figuren extends PApplet
     @Override
     public void settings()
     {
-        size(500, 350); // Festlegen der Fenstergröße
+        size(600, 450); // Festlegen der Fenstergröße
     }        
 
     public void zeichneBildC() {
@@ -25,8 +25,17 @@ public class Figuren extends PApplet
         // Werte du den Methoden rect(x,y,b,h) und ellipse(x,y,b,h) übergeben musst, 
         // dass Bild C gezeichnet wird
 
-        // ***** hier kommen deine Anweisungen hin ************
-
+        rect(100, 100, 100, 100);
+        ellipse(150, 150, 75, 75);
+        ellipse(150, 150, 50, 50);
+        ellipse(150, 150, 25, 25);
+        
+        ellipse(150, 275, 125, 125);   
+        rect(112, 237, 75, 75);
+        rect(125, 250, 50, 50); 
+        rect(138, 264, 25, 25);
+        
+   
         // ***** Ende der eigenen Anweisungen **********
     }
 
@@ -34,6 +43,11 @@ public class Figuren extends PApplet
     public void zeichneBildA() {
         // ***** hier kommen deine Anweisungen hin ************
 
+        
+        
+        
+        
+        
         // ***** Ende der eigenen Anweisungen **********  
     }
 
@@ -56,5 +70,4 @@ public class Figuren extends PApplet
     public static void main(String _args[]){ 
         PApplet.main(new String[] {Figuren.class.getName() });
     }
-
 }
