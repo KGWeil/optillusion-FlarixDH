@@ -21,7 +21,7 @@ public class Figur_a extends PApplet
     }        
 
     public void zeichneBildC() {
-        // 
+        // HerrGebert = Java
         
         circle(250, 150, 100);
         rect(200, 200, 100, 100);
