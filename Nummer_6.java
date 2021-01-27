@@ -2,13 +2,13 @@
 import processing.core.PApplet;
 
 /**
- * Klasse Figur_a.
- * Beschreibung: Hier sollen mehrere vorgegebene Figur_a gezeichnet werden.
+ * Klasse figurC_mitSchleife.
+ * Beschreibung: Die FigurC aus der vorherigen Aufgabe soll mit einer Zählschleife implementiert werden.
  *
  * @author Simon Gebert 
  * @version Feb2020
  */
-public class Figur_a extends PApplet
+public class Nummer_6 extends PApplet
 {       
     /**
      * settings() Methode 
@@ -17,24 +17,21 @@ public class Figur_a extends PApplet
     @Override
     public void settings()
     {
-        size(800, 600); // Festlegen der Fenstergröße
+        size(700,650); // Festlegen der Fenstergröße
     }        
 
-    public void zeichneBildC(){
-        // HerrGebert = Java
-        
-        circle(250, 150, 100);
-        rect(200, 200, 100, 100);
-        triangle(300, 400, 250, 300, 200, 400);
+    public void zeichneBildC() {
+        // Herr Gebert = Java
            
-        // ***** Ende der eigenen Anweisungen **********
-    }
-
-    //***** Zusatzaufgabe bzw. Hausaufgabe *************
-    public void zeichneBildA() {
-        // ***** hier kommen deine Anweisungen hin ************
-
-        // ***** Ende der eigenen Anweisungen **********  
+         int x=50;
+         int y=50;
+         int b=50;
+         int h=40;
+          for (int i=0; i<=4; i++){
+         
+          rect(x+i*55, y+i*40, b, h);
+         
+        }
     }
 
     /**
@@ -46,14 +43,15 @@ public class Figur_a extends PApplet
     public void setup()
     {
         zeichneBildC(); // Aufruf deiner Methode
-        // zeichneBildA();
     }
+
 
     /**
      * Mit der main()-Methode wird das Programm gestartet.
      *
      */    
     public static void main(String _args[]){ 
-        PApplet.main(new String[] {Figur_a.class.getName() });
+        PApplet.main(new String[] {Nummer_6.class.getName() });
     }
+
 }

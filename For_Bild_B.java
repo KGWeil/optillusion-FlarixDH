@@ -8,7 +8,7 @@ import processing.core.PApplet;
  * @author Simon Gebert 
  * @version Feb2020
  */
-public class FigurC_mitSchleife extends PApplet
+public class For_Bild_B extends PApplet
 {       
     /**
      * settings() Methode 
@@ -20,21 +20,33 @@ public class FigurC_mitSchleife extends PApplet
         size(700,650); // Festlegen der Fenstergröße
     }        
 
-    public void zeichneBildC() {
-        // Herr Gebert = Java
-
+    public void Bild_C_O() {
+         
+        rect(200, 100, 200, 200);
+        
         int x=200;
-        int y=200;
+        int y=100;
         int b=200;
         int h=200;
         int d=150;
-
-        rect( x, y, b, h);
+   
         for (int i=0; i<=2; i++){
-
             circle(x+100, y+100, d);
-            d-=50;
+            d-=35;
         }
+    }
+
+    public void Bild_C_U(){
+
+        circle(300, 500, 300);
+        
+        int x=200;
+        int y=400;
+        int b=175;
+        int h=175;
+        for (int i=0; i<=2; i++){
+          rect(x+25, y+25, b-25, h-25);
+        }    
     }
 
     /**
@@ -45,7 +57,8 @@ public class FigurC_mitSchleife extends PApplet
     @Override
     public void setup()
     {
-        zeichneBildC(); // Aufruf deiner Methode
+        Bild_C_O();
+        Bild_C_U();
     }
 
     /**
@@ -53,7 +66,7 @@ public class FigurC_mitSchleife extends PApplet
      *
      */    
     public static void main(String _args[]){ 
-        PApplet.main(new String[] {FigurC_mitSchleife.class.getName() });
+        PApplet.main(new String[] {For_Bild_B.class.getName() });
     }
 
 }
