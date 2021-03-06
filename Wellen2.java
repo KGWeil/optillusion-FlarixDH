@@ -37,7 +37,6 @@ public class Wellen2 extends PApplet
         fill(grün);
         noStroke();
         rect(x, y, s, s);
-
         fill(weiß);
         noStroke();
         rect(x+6, y+6, s-12, s-12);
